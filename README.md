@@ -12,4 +12,4 @@ Feel free to contribute .. :D
 
 ## Requests, Improvements, Issues
 
-If you found a mistake, or want improvemenents are needed feel free to submit [**a new issue**](https://github.com/srsandy/ReactJS-BoilerPlate/issues).
+If you found a mistake, or want improvemenents are needed feel free to submit [**a new issue**](https://github.com/opensrc-org/TodoList-Vue/issues).
