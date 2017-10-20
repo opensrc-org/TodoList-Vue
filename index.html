@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue Js</title>
+	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script src="vue.js"></script>
+</head>
+<body>
+	<div id="app">
+
+		<div id="inp">
+			<input type="text" placeholder="Add Todos" v-model="item" @keyup.enter="addItem">
+			<button :title="title" @click="addItem">Add</button>
+		</div>
+		<h2 v-if="empty">List is Empty</h2>
+		<ul>
+			<div v-for="item in items" id="list">
+				<li class="list" :class="{ red : !item.done, green: item.done}" :data-no="item.id" @click="changeDone($event)">{{item.task}}</li>
+				<button  @click="delet"><i :data-no="item.id"class="ion-ios-close"></i></button>
+			</div>
+		</ul>
+		
+	</div>	
+	<script src="script.js"></script>
+</body>
+</html>

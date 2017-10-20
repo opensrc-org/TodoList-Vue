@@ -1,0 +1,87 @@
+		* {
+			box-sizing: border-box;
+		}
+
+		#app {
+			width: 60%;
+			height: auto;
+			padding: 20px;
+			margin: 0 auto;
+		}
+
+		#inp > input[type=text] {
+			width: 80%;
+			height: 30px;
+			border: none;
+			border-bottom: 1px solid #ccc; 
+			font-size: 23px;
+			padding-left: 20px;
+		}
+
+		#inp >input:focus, button:focus {
+			outline: none;
+		}
+
+		#inp button {
+			height: 35px;
+			width: 45px;
+			margin: 0 30px;
+			border-radius: 40px;
+			background-color: transparent;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		ul{
+			margin: 10px 0;
+			width: 100%;
+			padding: 0;
+		}
+
+		#list {
+			width: 100%;
+		}
+
+		#list > button, #list > .list {
+			display: inline-block;
+		}
+
+		#list > button {
+			height: 30px;
+			width: 40px;
+			/*margin-bottom: 10px;*/
+			/*margin-left: 40px;*/
+			position: relative;
+			top: -3px;
+			left: 36px;
+			border-radius: 40px;
+			background-color: transparent;
+			padding-top: 3px;
+			padding-left: 7px;
+		}
+
+		#list > button >  i {
+			font-size: 18px;
+
+		}
+
+		.list {
+			font-size: 30px;
+			height: 40px;
+			padding-top: 1px;
+			width: 80%;
+			list-style: none;
+			margin-bottom: 2px;
+			padding-left: 30px;	
+			text-transform: capitalize;
+		}
+
+		.red {
+			background-color: #f44336;
+		}
+
+		.green {
+			background-color: #80b89c;
+		}
