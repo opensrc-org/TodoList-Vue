@@ -17,7 +17,7 @@
 					if(!this.item) {
 						alert('Pls Add Something!!');
 					} else {
-						this.items.push({task :this.item, done: false, id: this.items.length});
+						this.items.push({task :this.item, done: false});
 						this.item = '';
 						localStorage.setItem("Memory",JSON.stringify(this.items));
 					}
@@ -29,16 +29,9 @@
 					
 				},
 				delet(e) {
-					console.log(e);
-
 					var index = e.target.dataset.no;
 					console.log(index);
 					this.items.splice(index,1);
-
-					for( i=index; i<this.items.length; i++) {
-						this.items[i].id -=1;
-						console.log('doing');
-					}
 					localStorage.setItem("Memory",JSON.stringify(this.items));
 				}
 			},

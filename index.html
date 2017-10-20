@@ -16,9 +16,9 @@
 		</div>
 		<h2 v-if="empty">List is Empty</h2>
 		<ul>
-			<div v-for="item in items" id="list">
-				<li class="list" :class="{ red : !item.done, green: item.done}" :data-no="item.id" @click="changeDone($event)">{{item.task}}</li>
-				<button  @click="delet"><i :data-no="item.id"class="ion-ios-close"></i></button>
+			<div v-for="(item,i) in items" id="list">
+				<li class="list" :class="{ red : !item.done, green: item.done}" :data-no="i" @click="changeDone($event)">{{item.task}}</li>
+				<button  @click="delet"><i :data-no="i"class="ion-ios-close"></i></button>
 			</div>
 		</ul>
 		
